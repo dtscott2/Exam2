@@ -1,4 +1,10 @@
 package com.example.demo.models;
 
-public interface DataRepo {
+import org.springframework.data.repository.CrudRepository;
+
+public interface DataRepo extends CrudRepository<Data,Integer> {
+
+
 }
+
+

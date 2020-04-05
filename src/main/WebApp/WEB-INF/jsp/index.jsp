@@ -93,13 +93,13 @@
     </tr>
 
 
-    <jsp:useBean id="inventory" scope="request" type="java.util.List"/>
-    <c:forEach var = "invListItem" items = "${inventory}">
+    <jsp:useBean id="Data" scope="request" type="java.util.List"/>
+    <c:forEach var = "dataListItem" items = "${Data}">
         <tr>
 
-            <td>${invListItem.description}</td>
-            <td>${invListItem.price}</td>
-            <td>${invListItem.color}</td>
+            <td>${dataListItem.description}</td>
+            <td>${dataListItem.price}</td>
+            <td>${dataListItem.color}</td>
 
         </tr>
     </c:forEach>
