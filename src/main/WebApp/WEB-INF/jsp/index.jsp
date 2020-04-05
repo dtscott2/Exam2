@@ -3,25 +3,25 @@
 <html>
 <head>
 
-    <title>Inventory List</title>
+    <title>The 5 Deadliest Viruses On Earth </title>
     <style>
 
         body {
 
-            background-color: white;
+            background-color: floralwhite;
 
         }
 
         div {
 
-            background-color: aliceblue;
+            background-color: floralwhite;
 
         }
 
         table {
 
             border-collapse: collapse;
-            font-family: "Georgia";
+            font-family: "Helvetica";
             text-align: left;
             width: 100%;
             padding: 15px;
@@ -30,16 +30,23 @@
 
         table, th, td {
 
-
-            border-bottom: 2px solid lightslategray;
+            font-size: 14px;
+            border-bottom: 3px solid slategray;
             padding: 10px;
-            column-width: 200px
+            column-width: fit-content;
+            height: 100px;
+
 
         }
 
-        th {
+        td {
+            font-family: Georgia;
+        }
 
-            background-color: slategrey;
+        th {
+            text-shadow: none;
+
+            background-color: darkslategrey;
             color: white;
 
         }
@@ -57,10 +64,11 @@
         }
 
         h2 {
+            font-family: Georgia;
 
             text-shadow: 2px 2px 5px white;
             padding: 20px;
-            background-color: cadetblue;
+            background-color: floralwhite;
             font-variant: small-caps;
             font-size: 50px;
             border-bottom: solid 5px;
@@ -68,38 +76,41 @@
 
         }
 
-        h3 {
-
-            padding-left: 20px;
 
 
 
-        }
+
 
     </style>
 </head>
 <body>
 <div>
 
-    <h2>Gnarly's Sporting Goods</h2>
+    <h2>The 5 Deadliest Viruses On Earth</h2>
 
-    <h3>Products In-Stock</h3>
+
 
 <table>
     <tr>
+        <th>ID</th>
+        <th>Name</th>
         <th>Description</th>
-        <th>Price</th>
-        <th>Color</th>
+        <th>Symptoms</th>
+        <th>Duration</th>
+        <th>Mortality Rate</th>
     </tr>
 
 
-    <jsp:useBean id="Data" scope="request" type="java.util.List"/>
-    <c:forEach var = "dataListItem" items = "${Data}">
+    <jsp:useBean id="data" scope="request" type="java.util.List"/>
+    <c:forEach var = "dataListItem" items = "${data}">
         <tr>
 
-            <td>${dataListItem.description}</td>
-            <td>${dataListItem.price}</td>
-            <td>${dataListItem.color}</td>
+            <td>${dataListItem.getId()}</td>
+            <td>${dataListItem.getName()}</td>
+            <td>${dataListItem.getDescription()}</td>
+            <td>${dataListItem.getSymptoms()}</td>
+            <td>${dataListItem.getDuration()}</td>
+            <td>${dataListItem.getMortalityRate()}</td>
 
         </tr>
     </c:forEach>

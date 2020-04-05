@@ -3,24 +3,24 @@ package com.example.demo.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "VirusData")
+@Table(name = "data")
 
 public class Data {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID")
+    @Column(name = "id")
     public int id;
-    @Column(name = "Name")
+    @Column(name = "name")
     public String name;
-    @Column(name = "Description")
+    @Column(name = "description")
     public String description;
-    @Column(name = "Symptoms")
+    @Column(name = "symptoms")
     public String symptoms;
-    @Column(name = "Duration")
+    @Column(name = "duration")
     public String duration;
-    @Column(name = "Mortality Rate")
+    @Column(name = "mortalityrate")
     public String mortalityRate;
 
 //    **fix image column**
