@@ -76,6 +76,10 @@
 
         }
 
+        img {
+            max-width: 100px;
+        }
+
 
 
 
@@ -98,6 +102,7 @@
         <th>Symptoms</th>
         <th>Duration</th>
         <th>Mortality Rate</th>
+        <th>Image</th>
     </tr>
 
 
@@ -111,6 +116,7 @@
             <td>${dataListItem.getSymptoms()}</td>
             <td>${dataListItem.getDuration()}</td>
             <td>${dataListItem.getMortalityRate()}</td>
+            <td><img src="${dataListItem.getImageaddress()}"></td>
 
         </tr>
     </c:forEach>

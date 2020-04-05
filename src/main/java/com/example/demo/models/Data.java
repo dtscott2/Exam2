@@ -22,10 +22,8 @@ public class Data {
     public String duration;
     @Column(name = "mortalityrate")
     public String mortalityRate;
-
-//    **fix image column**
-//    @Column(name = "Image")
-//    public String image;
+    @Column(name = "imageaddress")
+    public String imageaddress;
 
 
     public Data() {
@@ -89,6 +87,16 @@ public class Data {
     public void setMortalityRate(String mortalityRate) {
         this.mortalityRate = mortalityRate;
     }
+
+
+    public String getImageaddress() {
+        return imageaddress;
+    }
+
+    public void setImageaddress(String imageaddress) {
+        this.imageaddress = imageaddress;
+    }
+
 
 
 
