@@ -34,7 +34,7 @@
             border-bottom: 3px solid slategray;
             padding: 10px;
             column-width: fit-content;
-            height: 100px;
+            height: 50px;
 
 
         }
@@ -44,6 +44,7 @@
         }
 
         th {
+            height: 20px;
             text-shadow: none;
 
             background-color: darkslategrey;
